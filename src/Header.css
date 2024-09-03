@@ -1,0 +1,144 @@
+.header {
+    background-color: var(--dark-blue, #1B213F);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lang {
+    margin-right: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.en,
+.ru,
+.az {
+    color: #1B213F;
+}
+
+.search-sign {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo-part {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+}
+.logos{
+    margin-inline: 10px;
+}
+.name {
+    width: 90px;
+    margin-left: 20px;
+}
+
+.left-part input {
+    margin-left: 70px;
+    width: 340px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 40px;
+    padding-left: 35px;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-input svg {
+    position: absolute;
+    left: 80px;
+    width: 18px;
+    top: 9px;
+}
+
+.right-part {
+    display: flex;
+    justify-content: center;
+}
+
+.create-account,
+.sign-in {
+    height: 40px;
+    margin-inline: 20px;
+    width: 132px;
+    border: 1px solid rgb(59, 138, 201);
+    color: rgb(59, 138, 201);
+    font-weight: 900;
+    font-size: 14px;
+    background-color: transparent;
+    margin-left: 40px;
+}
+
+.sign-in {
+    width: 100px;
+    color: white;
+    background-color: rgb(59, 138, 201);
+    margin-inline: 10px;
+}
+
+@media(max-width: 1000px) {
+    .header{
+        width: 100%;
+    }
+    .search-sign{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    } 
+    .logo{
+        width: 40px;
+    }
+    .name{
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .search-input input{
+        width: 300px;
+    }
+    
+    .logos{
+        display: none;
+    }
+}
